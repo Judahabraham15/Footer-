@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Footer Design</title>
+        <meta charset="UTF-8">
+        <meta name="viewport"content="width-device-width,initial-scale=1">
+        <link rel="stylesheet"href="css/style.css">
+        <link rel="stylesheet"type="text/css"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    </head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        body{
+            line-height: 1.5;
+            font-family:'Poppins',sans-serif ;
+        }
+        *{
+           margin: 0;
+           padding:0;
+           box-sizing: border-box;
+        }
+        .container{
+            max-width: 1170px;
+            margin: auto;
+        }
+        .row{
+            display:flex;
+            flex-wrap:wrap ;
+        }
+        ul{
+            list-style-type: none;
+        }
+        .footer{
+           background-color: #24262b;
+           padding:70px 0;
+
+        }
+        .footer-col{
+         width:25%;
+         padding:0 15px;
+        }
+        .footer-col h4{
+            font-size :18px;
+            color:#ffffff;
+            text-transform:capitalize;
+            margin-bottom:35px;
+            font-weight: 500;
+            position: relative;
+            
+        }
+        .footer-col h4::before{
+            content: '';
+            position: absolute;
+            background-color: #e91e63;
+            height: 2px;
+            left:0;
+            bottom:-10px;
+            box-sizing: border-box;
+            width:50px 
+
+        }
+        .footer-col h4:hover{
+            transition: all 0.3s ease;
+            padding-left: 8px;
+
+        }
+        .footer-col h4:hover::before{
+            transition: all 0.3s ease;
+            padding-left: 8px;
+
+
+        }
+        .footer-col ul li:not(:last-child){
+            margin-bottom:10px;
+        }
+        .footer ul li a{
+             font-size:16px;
+             text-transform: capitalize;
+             color:white ;
+             font-weight:100 ;
+             color: #bbbbbb;
+             text-decoration: none;
+             display: block;
+             transition: all 0.3s ease;
+
+        }
+        .footer ul li a:hover{
+            color:white;
+            padding-left: 8px;
+        }
+        .footer-col .socials-links a{
+            display: inline-block;
+            height:40px ;
+            width: 40px;
+            background-color: rgba(255,255,255,0.2);
+            margin: 0 10px 10px 0;
+            text-align: center;
+            line-height: 40px;
+            border-radius:100px;
+            color: white;
+            transition: all 0.5s ease;
+        }
+        .footer-col .socials-links a:hover{
+            color:#24262b;
+            background-color: white;
+        }
+        /*responsive*/
+        @media(max-width:800px){
+            .footer-col{
+                width:50%;
+                margin-bottom: 30px;
+            }
+        }
+        </style>
+    <body>
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>company</h4>
+                        <ul>
+                            <li><a href="a">about us</a></li>
+                            <li><a href="a">our services</a></li>
+                            <li><a href="a">privacy policy</a></li>
+                            <li><a href="a">affiliate program</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>get help</h4>
+                        <ul>
+                            <li><a href="a">FAQ</a></li>
+                            <li><a href="a">shipping</a></li>
+                            <li><a href="a">returns</a></li>
+                            <li><a href="a">order status</a></li>
+                            <li><a href="a">payment option</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>online shop</h4>
+                        <ul>
+                            <li><a href="a">watch</a></li>
+                            <li><a href="a">bag</a></li>
+                            <li><a href="a">shoes</a></li>
+                            <li><a href="a">dress</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>follow us</h4>
+                        <div class="socials-links">
+                            <a href="a"><i class="fab fa-facebook-f"></i></a>
+                            <a href="a"><i class="fab fa-twitter"></i></a>
+                            <a href="a"><i class="fab fa-instagram"></i></a>
+                            <a href="a"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
